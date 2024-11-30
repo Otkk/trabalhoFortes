@@ -1,0 +1,479 @@
+
+@font-face {
+    font-family: 'ShareTech'; /* Nome da fonte */
+    src: url('./fonte/ShareTech-Regular.ttf') format('truetype'); /* Caminho para o arquivo da fonte */
+}
+
+* {
+    font-family: 'ShareTech', sans-serif; /* Aplica a fonte para todos os elementos */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./imagens/fundo.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title-box {
+    background-color: #FFD700;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 18px;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 16px;
+    color: white;
+}
+
+.input-text {
+    width: 180px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFD700;
+    color: #333;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #FFC700;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #FFD700;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.navbar span {
+    color: #333;
+    margin: 0 10px;
+}
+
+.main-content {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: calc(100vh - 150px);
+}
+
+.yellow-box {
+    background-color: #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+.yellow-box h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.info-text {
+    font-size: 18px;
+    color: white;
+    max-width: 600px;
+    padding: 0 20px;
+}
+
+.donation-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.donation-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.white-box {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+    min-width: 180px;
+}
+
+.white-box p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+}
+
+.btn-contribute {
+    background-color: #FFD700;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-contribute:hover {
+    background-color: #FFC700;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.white-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.white-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.topic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.topic p {
+    max-width: 80%;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.btn-upload {
+    background-color: #FFD700;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-upload:hover {
+    background-color: #FFC700;
+}
+
+.terms {
+    margin-top: 30px;
+}
+
+.terms p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.terms label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    padding: 20px;
+    position: fixed;
+    height: 350px;
+    box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.project-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-option {
+    margin-bottom: 15px;
+}
+
+.project-option input {
+    display: none;
+}
+
+.option-box {
+    background-color: #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    text-align: center;
+    cursor: pointer;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.project-option input:checked + .option-box {
+    background-color: #ffffff;
+    border-color: #ffffff;
+}
+
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+.project-info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-info h2 {
+    color: white;
+    position: relative;
+    right: -87px;;
+}
+
+.info-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 1002px;
+}
+
+.info-box h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.info-box strong {
+    color: #333;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-header {
+    margin-bottom: 30px;
+}
+
+.contact-header h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+.contact-header p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.contact-form .form-field {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline-color: #FFD700;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+/* Botão de Enviar */
+.contact-button {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.btn-enviar {
+    background-color: #FFD700;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-enviar:hover {
+    background-color: #FFC700;
+}
+
+.btn-back1 {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #FFC700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-back1:hover {
+    background-color: #ffffff;
+}
+.select-box {
+    width: 500px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+}
+.btn-financeiro {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #FFC700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.btn-financeiro:hover {
+    background-color: #ffffff;
+}
+.containerP button{
+    padding: 10px 20px;
+    background-color: #FFC700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Projeto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="containerP">
+        <div class="project-options">
+            <select name="project" id="project-select" class="select-box">
+                <option value="project1">Projeto 1</option>
+                <option value="project2">Projeto 2</option>
+                <option value="project3">Projeto 3</option>
+            </select>
+
+        <div class="main-content">
+
+    <div class="info-box" id="project-info">
+        <h3>Dados Gerais</h3>
+        <p><strong>Participantes registrados:</strong> <input type="number" id="participantes" placeholder="Número de participantes"></p>
+        <p><strong>Data de criação:</strong> <input type="date" id="data-criacao"></p>
+        <p><strong>Razão Social:</strong> <input type="text" id="razao-social" placeholder="Nome da Empresa"></p>
+        <p><strong>CNPJ:</strong> <input type="text" id="cnpj" placeholder="XX.XXX.XXX/XXXX-XX"></p>
+    </div>
+
+    <div class="info-box">
+        <h3>Endereço</h3>
+        <p><strong>Cidade:</strong> <input type="text" id="cidade" placeholder="Nome da Cidade"></p>
+        <p><strong>UF:</strong> <input type="text" id="uf" placeholder="UF" maxlength="2"></p>
+        <p><strong>Rua:</strong> <input type="text" id="rua" placeholder="Nome da Rua"></p>
+        <p><strong>Bairro:</strong> <input type="text" id="bairro" placeholder="Nome do Bairro"></p>
+        <p><strong>CEP:</strong> <input type="text" id="cep" placeholder="XXXXX-XXX"></p>
+    </div>
+
+    <div class="info-box">
+        <h3>Contato</h3>
+        <p><strong>E-mail 1:</strong> <input type="email" id="email1" placeholder="email1@dominio.com"></p>
+        <p><strong>Telefone 1:</strong> <input type="tel" id="telefone1" placeholder="(XX) XXXX-XXXX"></p>
+        <p><strong>E-mail 2:</strong> <input type="email" id="email2" placeholder="email2@dominio.com"></p>
+        <p><strong>Telefone 2:</strong> <input type="tel" id="telefone2" placeholder="(XX) XXXX-XXXX"></p>
+    </div>
+
+    <button>Salvar Informações</button>
+</div>
+        <button class="btn-back1" onclick="window.history.back()">Voltar</button>
+        <a href="./financeiro.html">
+        <button class="btn-financeiro">Financeiro</button></a>
+    </div>
+
+    
+</body>
+</html>
